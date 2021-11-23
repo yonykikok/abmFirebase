@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      ABM FIREBASE
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-input type="email" placeholder="ingrese su email" [(ngModel)]="usuario.email"></ion-input>
+  <ion-input type="password" placeholder="ingrese su password" [(ngModel)]="usuario.password"></ion-input>
+  <ion-button (click)="altaUsuario()">alta usuario</ion-button>
+
+  <h6>Lista de usuarios</h6>
+  <ul>
+    <li *ngFor="let user of listaDeUsuarios" (click)="obtenerPorId(user.id)">{{user | json}}</li>
+  </ul>
+
+  <ion-button (click)="modificar()">modificar usuario</ion-button>
+
+
+</ion-content>

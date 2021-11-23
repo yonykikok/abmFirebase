@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "tpgrupalpps2020": {
+      "hosting": {
+        "app": [
+          "tpgrupalpps2020"
+        ]
+      }
+    }
+  }
+}

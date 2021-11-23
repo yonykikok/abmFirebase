@@ -1,0 +1,7 @@
+{
+  "name": "abmfirebase",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
